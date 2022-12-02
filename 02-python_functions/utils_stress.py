@@ -10,6 +10,9 @@ import sys
 
 
 def stress_tensor(sigma_H,trend_H,plunge_H, sigma_h,trend_h,plunge_h, sigma_V,trend_V,plunge_V):
+    '''calculate the stress tensor in x,y,z directions from the three principal components
+    '''
+
     #principal components tensor:
     Tp = np.array([[sigma_H,0,0],[0,sigma_h,0],[0,0,sigma_V]])
     # x,y,z direction for each components

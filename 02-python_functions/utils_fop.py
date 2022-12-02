@@ -14,6 +14,8 @@ import scipy.stats
 
 
 def fop(data, column, **kwargs):  
+    '''calculate and return the open fraction fop in bins of a parameter specified by the 'column' variable
+    '''
     nbin = kwargs.get('bin_number',100)# number of bins
     bin_min = kwargs.get('min', data[column].min())
     bin_max = kwargs.get('max', data[column].max())
@@ -65,8 +67,10 @@ def fop(data, column, **kwargs):
     return data_save
 
 def fop2D(data, column1, column2,  **kwargs):  
-    nbin1 = kwargs.get('bin_number1',50)# number of bins
-    nbin2 = kwargs.get('bin_number2',50)# number of bins
+    '''calculate and return the open fraction fop in 2D bins made from two parameter specified by the 'column1' and 'column2' variable
+    '''
+    nbin1 = kwargs.get('bin_number1',50)
+    nbin2 = kwargs.get('bin_number2',50)
     bin_min1 = kwargs.get('min1', data[column1].min())
     bin_max1 = kwargs.get('max1', data[column1].max())
     bin_min2 = kwargs.get('min2', data[column2].min())
