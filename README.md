@@ -1,6 +1,6 @@
 # Forsmark-Openness-Analysis
 
-In this repository, you will find data, python code, and notebooks analyses supporting the paper "Past fracture reactivation by fluid overpressure suggested by the openness distribution in Forsmark, Sweden".
+In this repository, you will find data, python code, and notebooks analyses supporting the paper: "Controls on fracture openness and reactivation in Forsmark, Sweden".
 
 The authors are: 
 Diane Doolaeghe;
